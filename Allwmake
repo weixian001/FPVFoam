@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd ${0%/*} || exit 1    # run from this directory
+makeType=${1:-libso}
+set -x
+
+./src/Allwmake
+
+wmake ./applications/utilities/preProcessing/canteraToFPVFoam
+wmake ./applications/utilities/postProcessing/FPVFoamPost
+wmake ./applications/solver/FPVFoam
+
+# ----------------------------------------------------------------- end-of-file
