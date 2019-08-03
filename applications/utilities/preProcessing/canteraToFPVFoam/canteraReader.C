@@ -649,20 +649,20 @@ Foam::canteraReader::canteraReader(const IOdictionary& canteraDict, const IOdict
       
       // Calculate hs
       calculateEnthalpy();
-      Info << "Done he" << endl;
+//      Info << "Done he" << endl;
 
       // Calculate Z
       calculateZ();
       
-      Info << "DOne Z" << endl;
+  //    Info << "DOne Z" << endl;
       
       calculatePv();
       
-      Info << "Done Pv" << endl;
+//      Info << "Done Pv" << endl;
       
       calculateSource();
       
-      Info << "Done Source" << endl;
+//      Info << "Done Source" << endl;
 
       for (int numZeta=0; numZeta<Zeta_param_.size();numZeta++)
       {
