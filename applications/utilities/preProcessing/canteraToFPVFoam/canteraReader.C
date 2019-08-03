@@ -662,7 +662,7 @@ Foam::canteraReader::canteraReader(const IOdictionary& canteraDict, const IOdict
       
       calculateSource();
       
-//      Info << "Done Source" << endl;
+      Info << "Done Source" << endl;
 
       for (int numZeta=0; numZeta<Zeta_param_.size();numZeta++)
       {
